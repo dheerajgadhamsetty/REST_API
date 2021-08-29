@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>HTML FORM TO ACCEPT TWO NOS</h2>
+    <form action="/add" method="post">
+    {% csrf_token %}
+    Enter First Number: <br>
+    <input type="text" name="firstnum" value="0"><br>
+    Enter Second Number: <br>
+    <input type="text" name="secondnum" value="0"><br>
+    <br><br>
+    <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
